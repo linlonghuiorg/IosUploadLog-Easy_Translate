@@ -1,0 +1,4 @@
+已更新 TargetAttributes 手动签名 target=1
+已更新签名配置：com.pik.tuw.zux.dof(2)；手动签名 target=1；项目级清理=0；xcconfig=0
+手动签名校验通过：
+target=Translate config=Release bundleId=com.pik.tuw.zux.dof profileUuid=b0a812bb-8333-40a6-a1f8-49ebbfce36ec profileName=appstore-com.pik.tuw.zux.dof-20261015080137537 team=H6QC247534 identity=Apple Distribution: longhui lin (H6QC247534)

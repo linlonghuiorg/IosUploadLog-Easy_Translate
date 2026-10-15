@@ -1,0 +1,1 @@
+签名配置错误：Provisioning profile "appstore-com.pik.tuw.zux.dof-20261015080137537" doesn't include the App Groups capability. (in target 'Translate' from project 'Translate') Provisioning profile "appstore-com.pik.tuw.zux.dof-20261015080137537" doesn't support the group.com.linlonghui.share App Group. (in target 'Translate' from project 'Translate') 

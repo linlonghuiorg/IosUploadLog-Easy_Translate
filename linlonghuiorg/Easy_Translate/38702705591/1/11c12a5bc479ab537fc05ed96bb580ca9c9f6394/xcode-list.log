@@ -1,0 +1,53 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild -list -workspace /Users/runner/work/Easy_Translate/Easy_Translate/Translate.xcworkspace
+
+Resolve Package Graph
+
+Fetching from https://github.com/k2-fsa/sherpa-onnx
+
+Fetching from https://github.com/csukuangfj/onnxruntime-libs
+
+Creating working copy of package ‘sherpa-onnx’
+
+Checking out 1.13.7 of package ‘sherpa-onnx’
+
+Creating working copy of package ‘onnxruntime-libs’
+
+Checking out 1.28.1 of package ‘onnxruntime-libs’
+
+
+Resolved source packages:
+  sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx @ 1.13.7
+  onnxruntime-libs: https://github.com/csukuangfj/onnxruntime-libs @ 1.28.1
+
+Information about workspace "Translate":
+    Schemes:
+        CoreSubscriptionKit
+        GoogleDataTransport
+        GoogleDataTransport-GoogleDataTransport_Privacy
+        GoogleMLKit
+        GoogleToolboxForMac
+        GoogleToolboxForMac-GoogleToolboxForMac_Logger_Privacy
+        GoogleToolboxForMac-GoogleToolboxForMac_Privacy
+        GoogleUtilities
+        GoogleUtilities-GoogleUtilities_Privacy
+        GoogleUtilitiesComponents
+        GTMSessionFetcher
+        GTMSessionFetcher-GTMSessionFetcher_Core_Privacy
+        MLKitCommon
+        MLKitNaturalLanguage
+        MLKitTranslate
+        MLKitTranslate-MLKitTranslate_resource
+        nanopb
+        nanopb-nanopb_Privacy
+        Pods-Translate
+        Pods-Translate_Test
+        PromisesObjC
+        PromisesObjC-FBLPromises_Privacy
+        SSZipArchive
+        SSZipArchive-SSZipArchive
+        Translate
+        Translate_Test
+        UMCommon
+        UMDevice
+

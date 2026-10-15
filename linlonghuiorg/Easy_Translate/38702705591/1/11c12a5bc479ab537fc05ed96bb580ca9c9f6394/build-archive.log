@@ -1,0 +1,147 @@
+Command line invocation:
+    /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/xcodebuild archive -workspace /Users/runner/work/Easy_Translate/Easy_Translate/Translate.xcworkspace -scheme Translate -configuration Release -destination generic/platform=iOS -skipMacroValidation -skipPackagePluginValidation -archivePath /Users/runner/work/Easy_Translate/Easy_Translate/build.xcarchive
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  onnxruntime-libs: https://github.com/csukuangfj/onnxruntime-libs @ 1.28.1
+  sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx @ 1.13.7
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (29 targets)
+    Target 'Translate' in project 'Translate'
+        ➜ Implicit dependency on target 'Pods-Translate' in project 'Pods' via file 'Pods_Translate.framework' in build phase 'Link Binary'
+        ➜ Implicit dependency on target 'CoreSubscriptionKit' in project 'Pods' via options '-framework CoreSubscriptionKit' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'PromisesObjC' in project 'Pods' via options '-framework FBLPromises' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'GTMSessionFetcher' in project 'Pods' via options '-framework GTMSessionFetcher' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'GoogleDataTransport' in project 'Pods' via options '-framework GoogleDataTransport' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'GoogleToolboxForMac' in project 'Pods' via options '-framework GoogleToolboxForMac' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'GoogleUtilities' in project 'Pods' via options '-framework GoogleUtilities' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'GoogleUtilitiesComponents' in project 'Pods' via options '-framework GoogleUtilitiesComponents' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'SSZipArchive' in project 'Pods' via options '-framework SSZipArchive' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'nanopb' in project 'Pods' via options '-framework nanopb' in build setting 'OTHER_LDFLAGS'
+        ➜ Explicit dependency on target 'sherpa-onnx' in project 'sherpa-onnx'
+    Target 'sherpa-onnx' in project 'sherpa-onnx'
+        ➜ Explicit dependency on target 'SherpaOnnx' in project 'sherpa-onnx'
+        ➜ Explicit dependency on target 'onnxruntime-ios' in project 'onnxruntime-libs'
+    Target 'SherpaOnnx' in project 'sherpa-onnx'
+        ➜ Explicit dependency on target 'onnxruntime-ios' in project 'onnxruntime-libs'
+    Target 'onnxruntime-ios' in project 'onnxruntime-libs' (no dependencies)
+    Target 'Pods-Translate' in project 'Pods'
+        ➜ Explicit dependency on target 'CoreSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'GTMSessionFetcher' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleDataTransport' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleMLKit' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleToolboxForMac' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUtilitiesComponents' in project 'Pods'
+        ➜ Explicit dependency on target 'MLKitCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'MLKitNaturalLanguage' in project 'Pods'
+        ➜ Explicit dependency on target 'MLKitTranslate' in project 'Pods'
+        ➜ Explicit dependency on target 'PromisesObjC' in project 'Pods'
+        ➜ Explicit dependency on target 'SSZipArchive' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+        ➜ Explicit dependency on target 'nanopb' in project 'Pods'
+    Target 'GoogleMLKit' in project 'Pods'
+        ➜ Explicit dependency on target 'MLKitCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'MLKitTranslate' in project 'Pods'
+    Target 'MLKitTranslate' in project 'Pods'
+        ➜ Explicit dependency on target 'MLKitNaturalLanguage' in project 'Pods'
+        ➜ Explicit dependency on target 'MLKitTranslate-MLKitTranslate_resource' in project 'Pods'
+        ➜ Explicit dependency on target 'SSZipArchive' in project 'Pods'
+    Target 'SSZipArchive' in project 'Pods'
+        ➜ Explicit dependency on target 'SSZipArchive-SSZipArchive' in project 'Pods'
+    Target 'SSZipArchive-SSZipArchive' in project 'Pods' (no dependencies)
+    Target 'MLKitTranslate-MLKitTranslate_resource' in project 'Pods' (no dependencies)
+    Target 'MLKitNaturalLanguage' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleToolboxForMac' in project 'Pods'
+        ➜ Explicit dependency on target 'GTMSessionFetcher' in project 'Pods'
+        ➜ Explicit dependency on target 'MLKitCommon' in project 'Pods'
+    Target 'MLKitCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleDataTransport' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleToolboxForMac' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUtilitiesComponents' in project 'Pods'
+        ➜ Explicit dependency on target 'GTMSessionFetcher' in project 'Pods'
+    Target 'GoogleUtilitiesComponents' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+    Target 'GoogleToolboxForMac' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleToolboxForMac-GoogleToolboxForMac_Logger_Privacy' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleToolboxForMac-GoogleToolboxForMac_Privacy' in project 'Pods'
+    Target 'GoogleToolboxForMac-GoogleToolboxForMac_Privacy' in project 'Pods' (no dependencies)
+    Target 'GoogleToolboxForMac-GoogleToolboxForMac_Logger_Privacy' in project 'Pods' (no dependencies)
+    Target 'GoogleDataTransport' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleDataTransport-GoogleDataTransport_Privacy' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUtilities' in project 'Pods'
+        ➜ Explicit dependency on target 'PromisesObjC' in project 'Pods'
+        ➜ Explicit dependency on target 'nanopb' in project 'Pods'
+    Target 'GoogleDataTransport-GoogleDataTransport_Privacy' in project 'Pods'
+        ➜ Implicit dependency on target 'PromisesObjC' in project 'Pods' via options '-framework FBLPromises' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'GoogleUtilities' in project 'Pods' via options '-framework GoogleUtilities' in build setting 'OTHER_LDFLAGS'
+        ➜ Implicit dependency on target 'nanopb' in project 'Pods' via options '-framework nanopb' in build setting 'OTHER_LDFLAGS'
+    Target 'nanopb' in project 'Pods'
+        ➜ Explicit dependency on target 'nanopb-nanopb_Privacy' in project 'Pods'
+    Target 'nanopb-nanopb_Privacy' in project 'Pods' (no dependencies)
+    Target 'GoogleUtilities' in project 'Pods'
+        ➜ Explicit dependency on target 'GoogleUtilities-GoogleUtilities_Privacy' in project 'Pods'
+        ➜ Explicit dependency on target 'PromisesObjC' in project 'Pods'
+    Target 'GoogleUtilities-GoogleUtilities_Privacy' in project 'Pods'
+        ➜ Implicit dependency on target 'PromisesObjC' in project 'Pods' via options '-framework FBLPromises' in build setting 'OTHER_LDFLAGS'
+    Target 'PromisesObjC' in project 'Pods'
+        ➜ Explicit dependency on target 'PromisesObjC-FBLPromises_Privacy' in project 'Pods'
+    Target 'PromisesObjC-FBLPromises_Privacy' in project 'Pods' (no dependencies)
+    Target 'GTMSessionFetcher' in project 'Pods'
+        ➜ Explicit dependency on target 'GTMSessionFetcher-GTMSessionFetcher_Core_Privacy' in project 'Pods'
+    Target 'GTMSessionFetcher-GTMSessionFetcher_Core_Privacy' in project 'Pods' (no dependencies)
+    Target 'CoreSubscriptionKit' in project 'Pods'
+        ➜ Explicit dependency on target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMCommon' in project 'Pods'
+        ➜ Explicit dependency on target 'UMDevice' in project 'Pods'
+    Target 'UMDevice' in project 'Pods' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode_26.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk -x objective-c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/runner/work/Easy_Translate/Easy_Translate/Sources/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode_26.3.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 65f38f2ceb424617f5622bc496b0a28b
+Build description path: /Users/runner/Library/Developer/Xcode/DerivedData/Translate-dvyonbqmoawpgddkhodnfiwbtils/Build/Intermediates.noindex/ArchiveIntermediates/Translate/IntermediateBuildFilesPath/XCBuildData/65f38f2ceb424617f5622bc496b0a28b.xcbuilddata
+/Users/runner/work/Easy_Translate/Easy_Translate/Translate.xcodeproj: error: Provisioning profile "appstore-com.pik.tuw.zux.dof-20261015080137537" doesn't include the App Groups capability. (in target 'Translate' from project 'Translate')
+/Users/runner/work/Easy_Translate/Easy_Translate/Translate.xcodeproj: error: Provisioning profile "appstore-com.pik.tuw.zux.dof-20261015080137537" doesn't support the group.com.linlonghui.share App Group. (in target 'Translate' from project 'Translate')
+/Users/runner/work/Easy_Translate/Easy_Translate/Translate.xcodeproj: error: Provisioning profile "appstore-com.pik.tuw.zux.dof-20261015080137537" doesn't include the com.apple.security.application-groups entitlement. (in target 'Translate' from project 'Translate')
+note: Run script build phase 'Fix ONNX Runtime MinimumOSVersion' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'Translate' from project 'Translate')
+** ARCHIVE FAILED **
+
+
+The following build commands failed:
+	Archiving workspace Translate with scheme Translate
+(1 failure)
